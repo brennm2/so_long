@@ -6,7 +6,7 @@
 /*   By: bde-souz <bde-souz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 16:30:17 by bde-souz          #+#    #+#             */
-/*   Updated: 2024/02/01 10:14:36 by bde-souz         ###   ########.fr       */
+/*   Updated: 2024/02/02 16:52:26 by bde-souz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ void	init_game(t_game *game)
 	game->map_copy = NULL;
 	game->cloaker_position = NULL;
 	game->map_name = NULL;
+	game->cloaker_number = 0;
 	game->moves = 0;
 	game->columns = 0;
 	game->rows = 0;
@@ -46,9 +47,7 @@ void	init_window(t_game *game)
 
 void	*init_cloaker(t_game *game, int cloaker)
 {
-	ft_printf("INIT CLOAKER CHECK!\n", cloaker);
 	game->cloaker_position = malloc(sizeof(t_point) * cloaker + 1);
-	ft_printf("CHECK! CLOAKER: %d\n", cloaker);
 	if (!game->cloaker_position)
 		return (NULL);
 	return (game->cloaker_position);

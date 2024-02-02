@@ -51,8 +51,6 @@ int	check_cloaker_position(t_game *game)
 		{
 			if (game->map[y][x] == 'X')
 			{
-				ft_printf("CHECK CLOAKER POSITION! Y: %d\n", y);
-				ft_printf("CHECK CLOAKER POSITION! X: %d\n", x);
 				game->cloaker_position[i].x = x;
 				game->cloaker_position[i].y = y;
 				i++;

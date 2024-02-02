@@ -6,7 +6,7 @@
 /*   By: bde-souz <bde-souz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 16:32:43 by bde-souz          #+#    #+#             */
-/*   Updated: 2024/01/31 17:03:37 by bde-souz         ###   ########.fr       */
+/*   Updated: 2024/02/02 20:16:13 by bde-souz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ int	main(int ac, char **av)
 		if (map_check_validation (game) == -1
 			|| check_map_characters(game) == -1)
 			ft_quit_game(game);
+		intro_quotes();
 		open_window(game);
 	}
 }

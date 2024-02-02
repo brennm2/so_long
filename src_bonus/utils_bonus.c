@@ -6,7 +6,7 @@
 /*   By: bde-souz <bde-souz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 16:32:14 by bde-souz          #+#    #+#             */
-/*   Updated: 2024/01/31 12:40:18 by bde-souz         ###   ########.fr       */
+/*   Updated: 2024/02/02 16:56:19 by bde-souz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,12 @@ void	free_map_copy(char **map, t_game *game)
 	free(game->map_copy);
 }
 
+void	free_cloaker(t_game *game)
+{
+	free(game->cloaker_position);
+	game->cloaker_position = NULL;
+}
+
 void	free_all(t_game *game)
 {
 	if (!game)
@@ -57,6 +63,8 @@ void	free_all(t_game *game)
 		free_map(game->map, game);
 	if (game->map_copy)
 		free_map_copy(game->map_copy, game);
+	if (game->cloaker_position)
+		free_cloaker(game);
 	if (game->win_ptr)
 		mlx_destroy_window(game->mlx_ptr, game->win_ptr);
 	if (game->img.mlx_img)

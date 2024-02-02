@@ -6,7 +6,7 @@
 /*   By: bde-souz <bde-souz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 15:48:43 by bde-souz          #+#    #+#             */
-/*   Updated: 2024/01/31 11:26:26 by bde-souz         ###   ########.fr       */
+/*   Updated: 2024/02/01 22:30:59 by bde-souz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,6 @@ int	check_for_collect(t_game *game)
 
 int	check_if_map_is_rectangle(t_game *game)
 {
-	int	x;
 	int	y;
 	int	columns_base;
 
@@ -82,7 +81,6 @@ int	check_if_map_is_rectangle(t_game *game)
 	while (game->rows > y)
 	{
 		columns_base = map_columns_len (game->map[y]);
-		x = 0;
 		if (game->columns != columns_base)
 			return (-1);
 		y++;

@@ -34,6 +34,10 @@ SRC = src/main.c \
 		src_bonus/moves_bonus.c \
 		src_bonus/cloaker_utils_bonus.c \
 		src_bonus/cloaker_move_bonus.c \
+		src_bonus/intro_quotes_bonus.c \
+		src_bonus/end_game_quotes_bonus.c \
+		src_bonus/failed_heist_quotes_bonus.c \
+		src_bonus/end_game_death_wish_quotes_bonus.c \
 		src_bonus/key_handler_bonus.c
 
 
@@ -67,7 +71,7 @@ fclean: clean
 	$(MAKE) fclean -C ./libs/Libft/
 	$(MAKE) clean -C ./libs/minilibx-linux/
 
-download:
+update:
 	@wget https://cdn.intra.42.fr/document/document/21300/minilibx-linux.tgz
 	@tar -xzf minilibx-linux.tgz -C libs
 	@rm minilibx-linux.tgz

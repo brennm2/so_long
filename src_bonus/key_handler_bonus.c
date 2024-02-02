@@ -6,7 +6,7 @@
 /*   By: bde-souz <bde-souz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/30 12:49:27 by bde-souz          #+#    #+#             */
-/*   Updated: 2024/02/01 12:15:53 by bde-souz         ###   ########.fr       */
+/*   Updated: 2024/02/02 15:56:31 by bde-souz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ void	test_move_up(t_game *game)
 		[game->player_position.x] == '1')
 		return ;
 	move_up (game);
+	render_hud_text(game);
 	move_cloaker(game);
 }
 
@@ -45,6 +46,7 @@ void	test_move_down(t_game *game)
 		[game->player_position.x] == '1')
 		return ;
 	move_down (game);
+	render_hud_text(game);
 	move_cloaker(game);
 }
 
@@ -54,6 +56,7 @@ void	test_move_left(t_game *game)
 		[game->player_position.x - 1] == '1')
 		return ;
 	move_left(game);
+	render_hud_text(game);
 	move_cloaker(game);
 }
 
@@ -63,5 +66,6 @@ void	test_move_right(t_game *game)
 		[game->player_position.x + 1] == '1')
 		return ;
 	move_right(game);
+	render_hud_text(game);
 	move_cloaker(game);
 }

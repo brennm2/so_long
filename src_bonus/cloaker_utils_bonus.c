@@ -18,20 +18,21 @@ void	check_cloaker_number(t_game *game)
 	}
 }
 
-
-void	spawn_cloaker (t_game *game)
+void	end_game_takedown(t_game *game)
 {
-	int i;
-	int	x;
+	failed_heist_quotes_bonus();
+	ft_quit_game(game);
+}
 
-	i = 0;
-	x = 0;
-
-	while (game->cloaker_position)
+void	check_cloaker_takedown(t_game *game, int i)
+{
+	if (game->cloaker_position[i].y == game->player_position.y 
+		&& game->cloaker_position[i].x == game->player_position.x)
 	{
-		
-		ft_printf("cloaker: %d\n", game->cloaker_position[i]);
-		i++;
+		put_texture(game, PLAYER_DEAD, game->cloaker_position[i].y * SIZE,
+			game->cloaker_position[i].x * SIZE);
+		put_texture(game, PLAYER_DEAD, game->cloaker_position[i].y * SIZE,
+			game->cloaker_position[i].x * SIZE);
+		end_game_takedown(game);
 	}
-
 }

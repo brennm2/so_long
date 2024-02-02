@@ -6,7 +6,7 @@
 /*   By: bde-souz <bde-souz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/30 12:28:45 by bde-souz          #+#    #+#             */
-/*   Updated: 2024/02/01 11:10:31 by bde-souz         ###   ########.fr       */
+/*   Updated: 2024/02/02 17:24:02 by bde-souz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,19 +25,19 @@ void	safe_house(t_game *game)
 		{
 			put_texture(game, FLOOR, game->player_position.y * SIZE,
 				game->player_position.x * SIZE);
-			ft_printf("\n- Bain: We are set for life!\n");
-			usleep(2000000);
-			ft_printf("	But… maybe you want to do some another hit");
-			ft_printf(" just for the action, huh?\n");
-			usleep(3000000);
-			ft_printf("	See you at the safehouse,");
-			ft_printf(" I'll show you the plans...\n\n");
-			usleep(3000000);
+			end_game_quotes(game);
 			ft_quit_game(game);
 		}
 	}
+	if (game->map[game->player_position.y][game->player_position.x] == 'X')
+	{
+		put_texture(game, PLAYER_DEAD, game->player_position.y * SIZE,
+			game->player_position.x * SIZE);
+		put_texture(game, PLAYER_DEAD, game->player_position.y * SIZE,
+			game->player_position.x * SIZE);
+		end_game_takedown(game);
+	}
 	game->moves += 1;
-	ft_printf("Moves: %d\n", game->moves);
 }
 
 void	move_up(t_game *game)

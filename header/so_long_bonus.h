@@ -6,7 +6,7 @@
 /*   By: bde-souz <bde-souz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/31 11:15:46 by bde-souz          #+#    #+#             */
-/*   Updated: 2024/02/01 11:32:20 by bde-souz         ###   ########.fr       */
+/*   Updated: 2024/02/02 17:18:57 by bde-souz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdarg.h>
+# include <time.h>
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 42
@@ -43,8 +45,11 @@
 # define EXIT_PLAYER_UP_DOWN "./textures/EXIT_PLAYER_UP_DOWN.xpm"
 
 # define CLOAKER "./textures/CLOAKER.xpm"
+# define PLAYER_DEAD "./textures/PLAYER_DEAD.xpm"
 
-
+# define HUDBG_LEFT "./textures/HUDBG_LEFT.xpm"
+# define HUDBG_RIGHT "./textures/HUDBG_RIGHT.xpm"
+# define HUDBG_MIDDLE "./textures/HUDBG_MIDDLE.xpm"
 
 typedef struct s_point
 {
@@ -120,6 +125,8 @@ void		*init_cloaker(t_game *game, int cloaker);
 // -- SRC/OPEN_WINDOW.C -- //
 void		display_window(t_game *game);
 void		open_window(t_game *game);
+void		render_hud_text(t_game *game);
+void		render_hud(t_game	*game);
 
 // -- SRC/RENDER_GAME.C -- //
 void		render_map(t_game *game);
@@ -141,9 +148,22 @@ void		move_left(t_game *game);
 
 // -- SRC_BONUS/CLOAKER_UTILS.C -- //
 void	check_cloaker_number(t_game *game);
-void	spawn_cloaker (t_game *game);
+void	check_cloaker_takedown(t_game *game, int i);
+void	end_game_takedown(t_game *game);
 
 // -- SRC_BONUS/CLOAKER_MOVE_BONUS.C -- //
 void	move_cloaker(t_game *game);
+
+// -- SRC_BONUS/INTRO_QUOTES.C -- //
+void	intro_quotes(void);
+
+// -- SRC_BONUS/END_GAME_QUOTES.C -- //
+void	end_game_quotes(t_game *game);
+
+// -- SRC_BONUS/END_GAME_DEATH_WISH_QUOTES.C -- //
+void	end_game_death_wish_quotes(void);
+
+// -- SRC_BONUS/FAILED_HEIST_QUOTES.C -- //
+void	failed_heist_quotes_bonus(void);
 
 #endif
