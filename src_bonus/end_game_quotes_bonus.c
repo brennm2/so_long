@@ -6,7 +6,7 @@
 /*   By: bde-souz <bde-souz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 22:39:51 by bde-souz          #+#    #+#             */
-/*   Updated: 2024/02/02 19:36:04 by bde-souz         ###   ########.fr       */
+/*   Updated: 2024/02/03 11:06:35 by bde-souz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,37 +62,27 @@ void	end_3(void)
 
 void	end_game_quotes(t_game *game)
 {
-	int end_number;
-	time_t t;
-	
+	int		end_number;
+	time_t	t;
+
 	srand((unsigned) time(&t));
 	end_number = rand() % 4;
-	if (end_number == 0)
+	if (end_number == 0 || end_number == 1)
 	{
-		if(game->cloaker_number > 7)
+		if (game->cloaker_number > 7)
 			end_game_death_wish_quotes();
+		else if (end_number == 0)
+			end_0 ();
 		else
-		end_0();
+			end_1 ();
 	}
-	else if(end_number == 1)
+	else if (end_number == 2 || end_number == 3)
 	{
-		if(game->cloaker_number > 7)
+		if (game->cloaker_number > 7)
 			end_game_death_wish_quotes();
+		else if (end_number == 2)
+			end_2 ();
 		else
-		end_1();
-	}
-	else if(end_number == 2)
-	{
-		if(game->cloaker_number > 7)
-			end_game_death_wish_quotes();
-		else
-		end_2();
-	}
-	else if(end_number == 3)
-	{
-		if(game->cloaker_number > 7)
-			end_game_death_wish_quotes();
-		else
-		end_3();
+			end_3 ();
 	}
 }

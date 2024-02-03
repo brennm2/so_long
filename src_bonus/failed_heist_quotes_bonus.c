@@ -6,7 +6,7 @@
 /*   By: bde-souz <bde-souz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 12:20:16 by bde-souz          #+#    #+#             */
-/*   Updated: 2024/02/02 18:06:16 by bde-souz         ###   ########.fr       */
+/*   Updated: 2024/02/03 10:47:26 by bde-souz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,18 +70,17 @@ void	end_failed_3(void)
 
 void	failed_heist_quotes_bonus(void)
 {
-	int end_number;
-	time_t t;
+	int		end_number;
+	time_t	t;
 
 	srand((unsigned) time(&t));
 	end_number = rand() % 4;
-
 	if (end_number == 0)
 		end_failed_0();
-	else if(end_number == 1)
+	else if (end_number == 1)
 		end_failed_1();
-	else if(end_number == 2)
+	else if (end_number == 2)
 		end_failed_2();
-	else if(end_number == 3)
+	else if (end_number == 3)
 		end_failed_3();
 }

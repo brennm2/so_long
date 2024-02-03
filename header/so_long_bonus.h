@@ -6,7 +6,7 @@
 /*   By: bde-souz <bde-souz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/31 11:15:46 by bde-souz          #+#    #+#             */
-/*   Updated: 2024/02/02 17:18:57 by bde-souz         ###   ########.fr       */
+/*   Updated: 2024/02/03 10:48:14 by bde-souz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,6 @@
 # define PLAYER_LEFT "./textures/PLAYER_LEFT.xpm"
 # define PLAYER_RIGHT "./textures/PLAYER_RIGHT.xpm"
 # define PLAYER_UP_DOWN "./textures/PLAYER_UP_DOWN.xpm"
-
 
 # define EXIT_PLAYER_LEFT "./textures/EXIT_PLAYER_LEFT.xpm"
 # define EXIT_PLAYER_UP_DOWN "./textures/EXIT_PLAYER_UP_DOWN.xpm"
@@ -147,23 +146,23 @@ void		move_right(t_game *game);
 void		move_left(t_game *game);
 
 // -- SRC_BONUS/CLOAKER_UTILS.C -- //
-void	check_cloaker_number(t_game *game);
-void	check_cloaker_takedown(t_game *game, int i);
-void	end_game_takedown(t_game *game);
+void		check_cloaker_number(t_game *game);
+void		check_cloaker_takedown(t_game *game, int i);
+void		end_game_takedown(t_game *game);
 
 // -- SRC_BONUS/CLOAKER_MOVE_BONUS.C -- //
-void	move_cloaker(t_game *game);
+void		move_cloaker(t_game *game);
 
 // -- SRC_BONUS/INTRO_QUOTES.C -- //
-void	intro_quotes(void);
+void		intro_quotes(void);
 
 // -- SRC_BONUS/END_GAME_QUOTES.C -- //
-void	end_game_quotes(t_game *game);
+void		end_game_quotes(t_game *game);
 
 // -- SRC_BONUS/END_GAME_DEATH_WISH_QUOTES.C -- //
-void	end_game_death_wish_quotes(void);
+void		end_game_death_wish_quotes(void);
 
 // -- SRC_BONUS/FAILED_HEIST_QUOTES.C -- //
-void	failed_heist_quotes_bonus(void);
+void		failed_heist_quotes_bonus(void);
 
 #endif

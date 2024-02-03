@@ -6,7 +6,7 @@
 /*   By: bde-souz <bde-souz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 17:14:33 by bde-souz          #+#    #+#             */
-/*   Updated: 2024/02/02 20:02:34 by bde-souz         ###   ########.fr       */
+/*   Updated: 2024/02/03 10:47:12 by bde-souz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,20 +54,19 @@ void	end_dw3(void)
 	usleep(3000000);
 }
 
-
 void	end_game_death_wish_quotes(void)
 {
-	int end_dwnumber;
-	time_t t;
-	
+	int		end_dwnumber;
+	time_t	t;
+
 	srand((unsigned) time(&t));
 	end_dwnumber = rand() % 4;
 	if (end_dwnumber == 0)
 		end_dw0();
-	else if(end_dwnumber == 1)
+	else if (end_dwnumber == 1)
 		end_dw1();
-	else if(end_dwnumber == 2)
+	else if (end_dwnumber == 2)
 		end_dw2();
-	else if(end_dwnumber == 3)
+	else if (end_dwnumber == 3)
 		end_dw3();
 }

@@ -6,7 +6,7 @@
 /*   By: bde-souz <bde-souz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 16:32:05 by bde-souz          #+#    #+#             */
-/*   Updated: 2024/02/02 19:58:19 by bde-souz         ###   ########.fr       */
+/*   Updated: 2024/02/03 10:45:29 by bde-souz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,28 +25,28 @@ void	display_window(t_game *game)
 void	render_hud_text(t_game *game)
 {
 	char	*moves;
-	int		HUD_Y;
-	int		HUD_X;
+	int		hud_y;
+	int		hud_x;
 
-	HUD_Y = game->rows * SIZE;
-	HUD_X = (game->columns / 2.7 ) * SIZE;
+	hud_y = game->rows * SIZE;
+	hud_x = (game->columns / 2.7) * SIZE;
 	moves = ft_itoa(game->moves);
 	render_hud(game);
 	if (game->coin_bag == game->collect)
 	{
-		mlx_string_put(game->mlx_ptr, game->win_ptr, HUD_X + 20,
-		HUD_Y + 35, 0xf70000, 
-		"// POINT OF NO RETURN // MOVES :    //" );
-		mlx_string_put(game->mlx_ptr, game->win_ptr, HUD_X + 219,
-		HUD_Y + 35, 0xf70000, moves);
+		mlx_string_put(game->mlx_ptr, game->win_ptr, hud_x + 20,
+			hud_y + 35, 0xf70000,
+			"// POINT OF NO RETURN // MOVES :    //" );
+		mlx_string_put(game->mlx_ptr, game->win_ptr, hud_x + 219,
+			hud_y + 35, 0xf70000, moves);
 	}
 	else
 	{
-		mlx_string_put(game->mlx_ptr, game->win_ptr, HUD_X ,
-			HUD_Y + 35, 0xFFEF00, 
+		mlx_string_put(game->mlx_ptr, game->win_ptr, hud_x,
+			hud_y + 35, 0xFFEF00,
 			"// POLICE ASSAULT IN PROGRESS // MOVES :    //" );
-		mlx_string_put(game->mlx_ptr, game->win_ptr, HUD_X + 244,
-			HUD_Y + 35, 0xFFEF00, moves);
+		mlx_string_put(game->mlx_ptr, game->win_ptr, hud_x + 244,
+			hud_y + 35, 0xFFEF00, moves);
 	}
 	free(moves);
 }
@@ -59,14 +59,15 @@ void	render_hud(t_game	*game)
 	while (game->columns > i)
 	{
 		if (i == 0)
-			put_texture(game, HUDBG_LEFT, game->rows * SIZE , i * SIZE);
+			put_texture(game, HUDBG_LEFT, game->rows * SIZE, i * SIZE);
 		else if (i + 1 == game->columns)
-			put_texture(game, HUDBG_RIGHT, game->rows * SIZE , i * SIZE);
+			put_texture(game, HUDBG_RIGHT, game->rows * SIZE, i * SIZE);
 		else if (i > 0 && i + 1 < game->columns)
-			put_texture(game, HUDBG_MIDDLE, game->rows * SIZE , i * SIZE);
+			put_texture(game, HUDBG_MIDDLE, game->rows * SIZE, i * SIZE);
 		i++;
 	}
 }
+
 void	open_window(t_game *game)
 {
 	display_window(game);

@@ -6,7 +6,7 @@
 /*   By: bde-souz <bde-souz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 11:09:26 by bde-souz          #+#    #+#             */
-/*   Updated: 2024/02/02 17:08:02 by bde-souz         ###   ########.fr       */
+/*   Updated: 2024/02/03 10:49:00 by bde-souz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,6 @@ int	move_cloaker_up(t_game *game, int i)
 		return (0);
 	}
 	return (-1);
-
 }
 
 int	move_cloaker_down(t_game *game, int i)

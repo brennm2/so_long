@@ -1,9 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   cloaker_utils_bonus.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bde-souz <bde-souz@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/02/03 10:36:11 by bde-souz          #+#    #+#             */
+/*   Updated: 2024/02/03 10:36:17 by bde-souz         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../header/so_long_bonus.h"
 
 void	check_cloaker_number(t_game *game)
 {
 	int	x;
 	int	y;
+
 	y = 0;
 	while (game->rows > y)
 	{
@@ -26,7 +39,7 @@ void	end_game_takedown(t_game *game)
 
 void	check_cloaker_takedown(t_game *game, int i)
 {
-	if (game->cloaker_position[i].y == game->player_position.y 
+	if (game->cloaker_position[i].y == game->player_position.y
 		&& game->cloaker_position[i].x == game->player_position.x)
 	{
 		put_texture(game, PLAYER_DEAD, game->cloaker_position[i].y * SIZE,

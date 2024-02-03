@@ -6,7 +6,7 @@
 /*   By: bde-souz <bde-souz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/31 11:10:15 by bde-souz          #+#    #+#             */
-/*   Updated: 2024/02/01 10:36:53 by bde-souz         ###   ########.fr       */
+/*   Updated: 2024/02/03 10:44:18 by bde-souz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,6 @@ void	read_map(char *map_name, t_game *game)
 	fill_map (fd, game);
 	game->columns = map_columns_len(game->map[0]);
 	check_cloaker_number(game);
-	//spawn_cloaker (game);
 	init_cloaker(game, game->cloaker_number);
 	close (fd);
 }
