@@ -6,7 +6,7 @@
 /*   By: bde-souz <bde-souz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 20:25:40 by bde-souz          #+#    #+#             */
-/*   Updated: 2024/02/03 10:48:35 by bde-souz         ###   ########.fr       */
+/*   Updated: 2024/02/03 11:49:30 by bde-souz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	intro_0(void)
 {
 	ft_printf("\n\n- Dallas: Alright, entry point.");
-	ft_printf("Synchronize on my mark... Mark.\n\n");
+	ft_printf(" Synchronize on my mark... Mark.\n\n");
 	usleep(3000000);
 	ft_printf("- Chains: Check!\n- Hoxton: Check!\n- Wolf:	  Check!\n\n");
 	usleep(2000000);

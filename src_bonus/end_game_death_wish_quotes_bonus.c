@@ -6,7 +6,7 @@
 /*   By: bde-souz <bde-souz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 17:14:33 by bde-souz          #+#    #+#             */
-/*   Updated: 2024/02/03 10:47:12 by bde-souz         ###   ########.fr       */
+/*   Updated: 2024/02/04 14:22:05 by bde-souz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	end_dw1(void)
 
 void	end_dw2(void)
 {
-	ft_printf("\n\n- Bain: *sigh*... That was closer than I'd like people...\n");
+	ft_printf("\n\n- Bain: *sigh*... That was closer than I'd like people.\n");
 	usleep(3000000);
 	ft_printf("	You did good back there, take advantage of it now.\n");
 	usleep(3000000);
