@@ -220,7 +220,9 @@ The second state indicates that the player has collected all the money bags and 
 </div>
 
 
-* [Wall and floor texture](https://o-lobster.itch.io/simple-dungeon-crawler-16x16-pixel-pack)
+* [Wall and floor Texture](https://o-lobster.itch.io/simple-dungeon-crawler-16x16-pixel-pack)
 * [Dallas Texture](https://imgur.com/gallery/Yn21yY8)
 * [Cloaker Texture](https://www.pixilart.com/art/pay-day-2-cloaker-ef4aab634260c70?ft=tags&ft_id=)
-
+* [Money Bag Texture](https://www.vecteezy.com/vector-art/5146414-money-bag-pixel-art)
+* [Manhole Texture](https://www.vecteezy.com/vector-art/23876320-sewer-drainage-grate-game-pixel-art-vector-illustration)
+* All my friends who helped me do this project
