@@ -77,10 +77,25 @@ Now you have to choose a map. If you have only compiled so_long base, then you s
 <br>
 <br>
 But if you've compiled the bonus game, then you can choose from 4 maps:
-- map_syntax_error
-- map_aftershock
-- mapdw_jewelry_store
-- mapdw_firestarter
+- map_syntax_error.ber
+- map_aftershock.ber
+- mapdw_jewelry_store.ber
+- mapdw_firestarter.ber
 
 Now… the game has 2 “difficulties”, `Normal` and `Death Wish`<br>
-Choosing the map with the initial `mapdw_` will start the map with more enemies!
+Choosing the map with the initial `mapdw_` will start the map with more enemies!<br><br>
+Here's how to start the game:
+
+```bash
+so_long maps/map_tester.ber
+```
+or
+```bash
+so_long_bonus maps/map_aftershock.ber
+```
+<br>
+<h4>5º Step - Winning the game</h4>
+
+- You move your character with the arrow keys or WASD
+- You must avoid the Cloakers, they move randomly only after the player moves, and ONLY if the player moves<br> (no walking on the wall to escape from enemies ;) )
+
