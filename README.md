@@ -10,8 +10,10 @@
 <br>
 <br>
 You have to learn how to work with textures, how to position them on the screen, and how to keep your projectorganized and clean. Following the rules of 42 School</p>
+<div align="center">
+  <img src="https://i.imgur.com/PxcZUQG.png">
+</div>
 
- 
 <br>
 <div align="center">
   <h1>What game is this?</h1>
