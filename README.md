@@ -119,7 +119,7 @@ This won't influence anything, just another way to improve your performance!
 </div>
 
 <div align="center">
-<h3>---------------- The Dialogues ----------------</h3>
+<h3>--------- The Dialogues ---------</h3>
 </div>
 <br>
 <p>One idea I had was to have dialogues in the game. Texts will appear in the shell depending on what happens in the game.<br><br>
@@ -150,7 +150,7 @@ Starting a game:
 <br>
 <br>
 <div align="center">
-<h3>---------------- The HUD ----------------</h3>
+<h3>--------- The HUD ---------</h3>
 </div>
 <br>
 <p>The game's HUD has 2 states, 1 - POLICE ASSAULT and 2 - POINT OF NO RETURN.</p>
@@ -165,7 +165,7 @@ The second state indicates that the player has collected all the money bags and 
 <br>
 <br>
 <div align="center">
-<h3>---------------- The Map ----------------</h3>
+<h3>--------- The Map ---------</h3>
 </div>
 <br>
 <p>The map can be modified, altered or even created in a simple and functional way, as long as it follows these rules:</p>
@@ -201,7 +201,7 @@ The second state indicates that the player has collected all the money bags and 
 <br>
 <br>
 <div align="center">
-<h3>---------------- 42 Rules ----------------</h3>
+<h3>--------- 42 Rules ---------</h3>
 </div>
 <br>
 <p>In every project we must follow certain rules, here are the rules for this project:</p>
@@ -218,7 +218,7 @@ The second state indicates that the player has collected all the money bags and 
 <br>
 <br>
 <div align="center">
-<h3>---------------- Credits ----------------</h3>
+<h3>--------- Credits ---------</h3>
 </div>
 
 
