@@ -200,5 +200,15 @@ The second state indicates that the player has collected all the money bags and 
 <div align="center">
 <h3>---------------- 42 Rules ----------------</h3>
 </div>
+In every project we must follow certain rules, here are the rules for this project:
+
+```bash
+- The project must not have memory leaks
+- The project must use the flags -Wall -Wextra -Werror
+- Each function can have a maximum of 25 lines
+- Each file should only have 5 functions
+- We should keep the code as clean as possible, for example, declarations should be on separate lines
+- We cannot use "for", "do...while", "switch", "case", "goto", ternary operators, or variable-length arrays
+```
 
 
