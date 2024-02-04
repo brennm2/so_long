@@ -113,11 +113,9 @@ This won't influence anything, just another way to improve your performance!
 <p>One idea I had was to have dialogues in the game. Texts will appear in the shell depending on what happens in the game.<br><br>
 In total, the game has 4 dialogue scenarios, and each scenario has 4 different sets of dialogue to choose from at random.<br>
 In short, there are 16 different dialogues! Four of them only happen if you're on Death Wish difficulty</p>
-<p>I won't show you an example because I want YOU to find out for yourself, can you beat it on this difficulty?
+<p>I won't show you an example because I want YOU to find out for yourself, can you beat it on this difficulty?<br>
 Here are some examples:</p>
 <br>
-<br>
-
 Starting a game:
 </p>
 <div align="center">
@@ -136,6 +134,4 @@ Starting a game:
   <img src="https://i.imgur.com/OyLdAFl.gif">
 </div>
 </div>
-
-
 
