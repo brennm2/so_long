@@ -110,8 +110,32 @@ This won't influence anything, just another way to improve your performance!
 </div>
 
 <div align="center">
-<p>My game follows the theme of the PAYDAY franchise. Where the "story" of the game is to steal things without using violence (basically, without using guns).
+<p>One idea I had was to have dialogues in the game. Texts will appear in the shell depending on what happens in the game.<br><br>
+In total, the game has 4 dialogue scenarios, and each scenario has 4 different sets of dialogue to choose from at random.<br>
+In short, there are 16 different dialogues! Four of them only happen if you're on Death Wish difficulty</p>
+<p>I won't show you an example because I want YOU to find out for yourself, can you beat it on this difficulty?
+Here are some examples:</p>
+<br>
+<br>
 
-But watch your step! Some Cloakers are escorting the place... But don't worry, your friend Bain will guide you through the heist.</p>
+Starting a game:
+</p>
+<div align="center">
+  <img src="https://i.imgur.com/0gwMzac.gif">
 </div>
+<br>
+<br>
+<p>Getting caught:</p>
+<div align="center">
+  <img src="https://i.imgur.com/JFpW2zX.gif">
+</div>
+<br>
+<br>
+<p>And, the end of the game:</p>
+<div align="center">
+  <img src="https://i.imgur.com/OyLdAFl.gif">
+</div>
+</div>
+
+
 
