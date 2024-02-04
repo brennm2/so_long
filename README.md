@@ -71,6 +71,16 @@ make bonus
 ```
 
 <br>
-<h4>4º Step - Download the files</h4>
+<h4>4º Step - Playing the game!</h4>
 
-Now you have to choose a map. If you have only compiled so_long base, then you should choose the map "map_tester.ber"
+Now you have to choose a map. If you have only compiled so_long base, then you should choose the map `"map_tester.ber"`
+<br>
+<br>
+But if you've compiled the bonus game, then you can choose from 4 maps:
+- map_syntax_error
+- map_aftershock
+- mapdw_jewelry_store
+- mapdw_firestarter
+
+Now… the game has 2 “difficulties”, `Normal` and `Death Wish`<br>
+Choosing the map with the initial `mapdw_` will start the map with more enemies!
