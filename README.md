@@ -87,11 +87,11 @@ Choosing the map with the initial `mapdw_` will start the map with more enemies!
 Here's how to start the game:
 
 ```bash
-so_long maps/map_tester.ber
+./so_long maps/map_tester.ber
 ```
 or
 ```bash
-so_long_bonus maps/map_aftershock.ber
+./so_long_bonus maps/map_aftershock.ber
 ```
 <br>
 <h4>5º Step - Winning the game</h4>
