@@ -196,11 +196,13 @@ The second state indicates that the player has collected all the money bags and 
 1000C000X01
 11111111111
 ```
-
+<br>
+<br>
 <div align="center">
 <h3>---------------- 42 Rules ----------------</h3>
 </div>
-In every project we must follow certain rules, here are the rules for this project:
+<br>
+<p>In every project we must follow certain rules, here are the rules for this project:</p>
 
 ```bash
 - The project must not have memory leaks
@@ -211,4 +213,14 @@ In every project we must follow certain rules, here are the rules for this proje
 - We cannot use "for", "do...while", "switch", "case", "goto", ternary operators, or variable-length arrays
 ```
 
+<br>
+<br>
+<div align="center">
+<h3>---------------- Credits ----------------</h3>
+</div>
+
+
+* [Wall and floor texture](https://o-lobster.itch.io/simple-dungeon-crawler-16x16-pixel-pack)
+* [Dallas Texture](https://imgur.com/gallery/Yn21yY8)
+* [Cloaker Texture](https://www.pixilart.com/art/pay-day-2-cloaker-ef4aab634260c70?ft=tags&ft_id=)
 
