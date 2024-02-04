@@ -5,23 +5,21 @@
 <div align="center">
   <h1>What is this all about?</h1>
 </div>
-<div align="center">
+
 <p>Basically, this project is about making a game from scratch, from the logic of movement to the "graphics engine" of the game.
 <br>
 <br>
 You have to learn how to work with textures, how to position them on the screen, and how to keep your projectorganized and clean. Following the rules of 42 School</p>
- </div>
+
  
 <br>
 <div align="center">
   <h1>What game is this?</h1>
 </div>
 
-<div align="center">
-<p>My game follows the theme of the PAYDAY franchise. Where the "story" of the game is to steal things without using violence (basically, without using guns).
+<p>My game follows the theme of the PAYDAY franchise. Where the "story" of my game is to steal things without using violence (basically, without using guns).
 
 But watch your step! Some Cloakers are escorting the place... But don't worry, your friend Bain will guide you through the heist.</p>
-</div>
 <br>
 <div align="center">
   <img src="https://i.imgur.com/KkOK0JB.png">
@@ -101,6 +99,9 @@ or
 - You need to collect ALL the money bags in order to escape the heist
 - An additional objective is to try to finish the map with as little movement as possible.<br>
 This won't influence anything, just another way to improve your performance!
+- If you want to stop playing, just press 'ESC' or close the window with the X button.
+<br>
+
 
 
 <br>
@@ -116,8 +117,9 @@ This won't influence anything, just another way to improve your performance!
 </div>
 
 <div align="center">
-<h3>The Dialogues</h3>
+<h3>---------------- The Dialogues ----------------</h3>
 </div>
+<br>
 <p>One idea I had was to have dialogues in the game. Texts will appear in the shell depending on what happens in the game.<br><br>
 In total, the game has 4 dialogue scenarios, and each scenario has 4 different sets of dialogue to choose from at random.<br>
 In short, there are 16 different dialogues! Four of them only happen if you're on Death Wish difficulty</p>
@@ -146,22 +148,27 @@ Starting a game:
 <br>
 <br>
 <div align="center">
-<h3>The HUD</h3>
+<h3>---------------- The HUD ----------------</h3>
 </div>
+<br>
 <p>The game's HUD has 2 states, 1 - POLICE ASSAULT and 2 - POINT OF NO RETURN.</p>
 <p>The first state indicates that the player has to collect the money bags and shows the total movement.<br>
 The second state indicates that the player has collected all the money bags and needs to leave the map.</p>
 <p>I had a problem with the HUD, as the map can be completely modular, so the size of the window also changes, and you have to re-calculate to place it in the right pixel. So, depending on the size of the map, the HUD won't be perfectly centered on the screen.</p>
-
+<br>
+<br>
 <div align="center">
   <img src="https://i.imgur.com/6XXhyzi.gif">
 </div>
-
+<br>
+<br>
 <div align="center">
-<h3>The Map</h3>
+<h3>---------------- The Map ----------------</h3>
 </div>
-The map can be modified, altered or even created in a simple and functional way, as long as it follows these rules:
+<br>
+<p>The map can be modified, altered or even created in a simple and functional way, as long as it follows these rules:</p>
 
+```bash
 - Only have ONE Player (P)
 - Only have ONE Exit (E)
 - There has to be AT LEAST one Collectible (C)
@@ -171,4 +178,27 @@ The map can be modified, altered or even created in a simple and functional way,
 - It has to be rectangular
 - The player must find a way to collect all the collectibles and reach the exit
 - The map can only use the following characters: 1, 0, E, P, C and X(This will not work if you run the base game)
+- The map extension must be ".ber"
+```
+<br>
+<br>
+<p>Here's a simple example:</p>
+
+```bash
+11111111111
+1000E0CX001
+1000P00C001
+10011111001
+1X0CX0X0011
+1000C000001
+10011111001
+100C0000001
+1000C000X01
+11111111111
+```
+
+<div align="center">
+<h3>---------------- 42 Rules ----------------</h3>
+</div>
+
 
