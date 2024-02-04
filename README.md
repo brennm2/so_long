@@ -97,5 +97,21 @@ so_long_bonus maps/map_aftershock.ber
 <h4>5º Step - Winning the game</h4>
 
 - You move your character with the arrow keys or WASD
-- You must avoid the Cloakers, they move randomly only after the player moves, and ONLY if the player moves<br> (no walking on the wall to escape from enemies ;) )
+- You must avoid the Cloakers, they move randomly only after the player moves, and ONLY IF the player moves<br> (no walking on the wall to escape from enemies ;) )
+- You need to collect ALL the money bags in order to escape the heist
+- An additional objective is to try to finish the map with as little movement as possible.<br>
+This won't influence anything, just another way to improve your performance!
+
+
+/// * GAME RUNNING HERE * ////
+
+<div align="center">
+  <h1>Considerations and Explanations</h1>
+</div>
+
+<div align="center">
+<p>My game follows the theme of the PAYDAY franchise. Where the "story" of the game is to steal things without using violence (basically, without using guns).
+
+But watch your step! Some Cloakers are escorting the place... But don't worry, your friend Bain will guide you through the heist.</p>
+</div>
 
