@@ -115,7 +115,9 @@ This won't influence anything, just another way to improve your performance!
   <h1>Considerations and Explanations</h1>
 </div>
 
-
+<div align="center">
+<h3>The Dialogues</h3>
+</div>
 <p>One idea I had was to have dialogues in the game. Texts will appear in the shell depending on what happens in the game.<br><br>
 In total, the game has 4 dialogue scenarios, and each scenario has 4 different sets of dialogue to choose from at random.<br>
 In short, there are 16 different dialogues! Four of them only happen if you're on Death Wish difficulty</p>
@@ -141,6 +143,32 @@ Starting a game:
   <img src="https://i.imgur.com/OyLdAFl.gif">
 </div>
 </div>
+<br>
+<br>
+<div align="center">
+<h3>The HUD</h3>
+</div>
+<p>The game's HUD has 2 states, 1 - POLICE ASSAULT and 2 - POINT OF NO RETURN.</p>
+<p>The first state indicates that the player has to collect the money bags and shows the total movement.<br>
+The second state indicates that the player has collected all the money bags and needs to leave the map.</p>
+<p>I had a problem with the HUD, as the map can be completely modular, so the size of the window also changes, and you have to re-calculate to place it in the right pixel. So, depending on the size of the map, the HUD won't be perfectly centered on the screen.</p>
 
+<div align="center">
+  <img src="https://i.imgur.com/6XXhyzi.gif">
+</div>
 
+<div align="center">
+<h3>The Map</h3>
+</div>
+The map can be modified, altered or even created in a simple and functional way, as long as it follows these rules:
+
+- Only have ONE Player (P)
+- Only have ONE Exit (E)
+- There has to be AT LEAST one Collectible (C)
+- It has to be enclosed by Walls (1)
+- And it needs to be filled with floors (0)
+- You can place enemies (X)
+- It has to be rectangular
+- The player must find a way to collect all the collectibles and reach the exit
+- The map can only use the following characters: 1, 0, E, P, C and X(This will not work if you run the base game)
 
