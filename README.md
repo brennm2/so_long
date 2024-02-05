@@ -9,7 +9,7 @@
 <p>Basically, this project is about making a game from scratch, from the logic of movement to the “graphics engine” of the game, using MinilibX libary.
 <br>
 <br>
-You have to learn how to work with textures, how to position them on the screen, and how to keep your projectorganized and clean. Following the rules of 42 School</p>
+You have to learn how to work with textures, how to position them on the screen, and how to keep your project organized and clean. Following the rules of 42 School</p>
 <div align="center">
   <img src="https://i.imgur.com/PxcZUQG.png">
 </div>
